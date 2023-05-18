@@ -1,0 +1,107 @@
+﻿Check Version
+=============
+git --version 
+git -v 
+
+
+Set Global name and email 
+=========================
+git config --global user.name "Alberto Iong"
+git config --global user.email "albert0i@hotmail.com"
+
+
+Check name and email
+====================
+git config user.name 
+git config user.email 
+
+
+Set default branch
+==================
+git config --global init.defaultBranch main 
+
+
+Getting Help (browser) 
+======================
+git help config
+
+
+Clone a repository
+==================
+git clone https://github.com/gitdagray/git-code-playground.git
+
+
+Remove clone information 
+========================
+rm -rf .git 
+
+
+Initialize a repository
+=======================
+git init 
+
+
+Check repository status
+=======================
+git status 
+
+(short version) 
+git status -s 
+
+
+Add all files to repository
+===========================
+git add . 
+
+
+Add .gitignore file
+===================
+which containers patterns or file names to be ignored. 
+
+
+Discard changes in the working directory
+========================================
+git restore index.html 
+
+
+Unstage changes in the working directory
+========================================
+git rm -r --cached . 
+
+
+Commit changes
+==============
+git commit -m "first commit"
+
+(add commit in one command) 
+git commit -a -m "Added exclamation mark"
+
+(without commit message, then you have to type it in the editor)
+git commit -a 
+
+
+Push code to github
+===================
+(create repository on github first)
+git remote add origin https://github.com/Albert0i/git-code-playground.git
+git branch -M main
+git push -u origin main
+
+
+To cache credentials (10 hours)
+===============================
+git config credential.helper 'cache --timeout=36000'
+
+git config --global credential.help 'cache --timeout=72000'
+
+
+
+
+
+
+EOF (2023/05/18)
+
+
+
+
+
